@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  web:
+    image: docker_machine_learning:latest
+    restart: always
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./Model:/Model
+
+volumes:
+    external: true
