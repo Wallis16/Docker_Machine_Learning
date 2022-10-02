@@ -1,12 +1,11 @@
 version: '3.8'
 services:
   web:
-    image: docker_machine_learning:latest
+    image: docker_machine_learning:v1
     restart: always
     ports:
       - "5000:5000"
     volumes:
-      - ./Model:/Model
-
+      - "./Model:/App/Model"
 volumes:
-    external: true
+  model_file:

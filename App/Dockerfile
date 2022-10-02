@@ -1,9 +1,6 @@
 # init a base image
 FROM ubuntu:22.04
 
-# Add a /app volume
-VOLUME ["Model"]
-
 # define the present working directory
 WORKDIR /App
 
