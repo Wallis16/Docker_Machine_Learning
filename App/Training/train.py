@@ -7,6 +7,7 @@ import numpy as np
 from sklearn import datasets, linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from joblib import dump, load
+from numpy import savetxt
 
 # Load the diabetes dataset
 diabetes_X, diabetes_y = datasets.load_diabetes(return_X_y=True)
@@ -30,8 +31,15 @@ regr = linear_model.LinearRegression()
 # Train the model using the training sets
 regr.fit(diabetes_X_train, diabetes_y_train)
 
+data_test = np.concatenate((diabetes_X_test, np.expand_dims(diabetes_y_test, axis=1)),axis=1)
+
+savetxt('data_test.csv', data_test, delimiter=',')
+
+#print(type(diabetes_X_test))
+#np.save("X_test.npy",diabetes_X_test)
+
 #
-dump(regr, 'C:/Users/dioge/Desktop/Docker_Machine_Learning/Model/model.joblib') 
+dump(regr, 'Model/model.joblib') 
 #regr_loaded = load('C:/Users/dioge/Desktop/Docker_Machine_Learning/Model/model.joblib') 
 
 # Make predictions using the testing set
