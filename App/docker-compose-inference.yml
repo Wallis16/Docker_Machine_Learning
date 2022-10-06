@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  web:
+    image: docker_machine_learning_inference:latest
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - "./Model:/App/Model"
+      - "./Results:/App/Results"
+volumes:
+  model_file:
