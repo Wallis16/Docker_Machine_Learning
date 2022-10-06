@@ -1,0 +1,1 @@
+# Visual content for explanation
