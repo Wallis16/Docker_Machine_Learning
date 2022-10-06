@@ -38,17 +38,4 @@ def training(url):
     regr.fit(diabetes_X_train, diabetes_y_train)
 
     #
-    dump(regr, 'Model/model.joblib') 
-    #regr_loaded = load('C:/Users/dioge/Desktop/Docker_Machine_Learning/Model/model.joblib') 
-
-    # Make predictions using the testing set
-    #diabetes_y_pred = regr_loaded.predict(diabetes_X_test)
-
-    #diabetes_y_pred = regr.predict(diabetes_X_test)
-
-    # The coefficients
-    #print("Coefficients: \n", regr.coef_)
-    # The mean squared error
-    #print("Mean squared error: %.2f" % mean_squared_error(diabetes_y_test, diabetes_y_pred))
-    # The coefficient of determination: 1 is perfect prediction
-    #print("Coefficient of determination: %.2f" % r2_score(diabetes_y_test, diabetes_y_pred))
+    dump(regr, 'Model/model.joblib')
