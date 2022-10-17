@@ -1,6 +1,6 @@
 # Docker for Machine Learning
 
-### Here we have a simple AI solution using Docker. The application is buit from scratch and has the goal of generating predictions receiving numerical data as input.
+#### Here we have a simple AI solution using Docker. The application is built from scratch and aims to generate predictions and receive numerical data as input.
 
 ## **Tree**
 
@@ -62,7 +62,22 @@ C:.
 ```
 
 ## **Data**
-### We are using the diabetes dataset from sklearn. We have a total of 442 instances. The data has 10 features: **age** (in years), **sex**, **bmi** (body mass index), **bp** (average blood pressure), **s1** (tc, total serum cholesterol), **s2** (ldl, low-density lipoproteins), **s3** (hdl, high-density lipoproteins), **s4** (tch, total cholesterol / HDL), **s5** (ltg, possibly log of serum triglycerides level), **s6** (glu, blood sugar level). The output is a numerical value related to "quantitative measure of disease progression one year after baseline". More information in [Diabetes dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html#diabetes-dataset).
+
+#### We are using the diabetes dataset from sklearn. We have a total of 442 instances. The data has ten features:
+
+#### &emsp; **Age** (in years)
+#### &emsp; **Sex**
+#### &emsp; **Bmi** (body mass index)
+#### &emsp; **Bp** (average blood pressure)
+#### &emsp; **S1** (tc, total serum cholesterol)
+#### &emsp; **S2** (LDL, low-density lipoproteins)
+#### &emsp; **S3** (HDL, high-density lipoproteins)
+#### &emsp; **S4** (tch, total cholesterol / HDL)
+#### &emsp; **S5** (ltg, possibly log of serum triglycerides level)
+#### &emsp; **S6** (glu, blood sugar level)
+
+#### The output is a numerical value related to the "quantitative measure of disease progression one year after baseline." More information in the [Diabetes dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html#diabetes-dataset).
+
 
 ## **Model**
 ### We use **linear regression** to perform the predictions. The dataset is divided into two parts: training and test. We are not using validation data to hiperparameters tuning, note that our goal is show how to build an AI software product using Docker. Furthermore, linear regression is not a interesting model when we consider hiperparameters tuning.
