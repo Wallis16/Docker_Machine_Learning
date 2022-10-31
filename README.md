@@ -100,7 +100,7 @@ C:.
 ### More details:
 
 <p align="center">
-  <img src="Imgs\docker_training.png" />
+  <img src="Imgs\docker_training.png" width="615" height="525"/>
 </p>
 
 ## **Inference container**
@@ -108,7 +108,7 @@ C:.
 ### More details:
 
 <p align="center">
-  <img src="Imgs\docker_inference.png" />
+  <img src="Imgs\docker_inference.png" width="615" height="525"/>
 </p>
 
 ## **Docker**
